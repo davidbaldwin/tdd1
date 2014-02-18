@@ -12,6 +12,12 @@ namespace TDD1
             Assert.AreEqual(0, Fibonacci(0));
         }
 
+        [TestMethod]
+        public void TestFib1Returns1()
+        {
+            Assert.AreEqual(1, Fibonacci(1));
+        }
+
         private object Fibonacci(object index)
         {
             return 0;
