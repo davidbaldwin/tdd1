@@ -33,7 +33,7 @@ namespace TDD1
         [TestMethod]
         public void TestFib12Returns144()
         {
-            Assert.AreEqual(143, Fibonacci(12));
+            Assert.AreEqual(144, Fibonacci(12));
         }
 
         private int Fibonacci(int index)
