@@ -45,7 +45,12 @@ namespace TDD1
 
         private int Fibonacci(int index)
         {
-            return index < 2 ? index : Fibonacci(index - 1) + Fibonacci(index - 2);
+            if (index < 0)
+            {
+                throw new ArgumentException("Fibonacci is undefined for negative numbers.");
+            } else {
+                return index < 2 ? index : Fibonacci(index - 1) + Fibonacci(index - 2);
+            }
         }
     }
 }
