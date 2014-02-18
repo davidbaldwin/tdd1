@@ -20,7 +20,7 @@ namespace TDD1
 
         private object Fibonacci(object index)
         {
-            return 0;
+            return index;
         }
     }
 }
