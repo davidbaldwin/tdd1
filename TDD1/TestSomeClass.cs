@@ -36,9 +36,16 @@ namespace TDD1
             Assert.AreEqual(144, Fibonacci(12));
         }
 
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException),"Fibonacci is undefined for negative numbers.")]
+        public void TestFibNegativeReturnsError()
+        {
+            int result = Fibonacci(-1);
+        }
+
         private int Fibonacci(int index)
         {
-            return index < 2 ? index : Fibonacci(index-1) + Fibonacci(index-2);
+            return index < 2 ? index : Fibonacci(index - 1) + Fibonacci(index - 2);
         }
     }
 }
