@@ -32,7 +32,7 @@ namespace TDD1
 
         private int Fibonacci(int index)
         {
-            return index < 2 ? index : 1;
+            return index < 2 ? index : Fibonacci(index-1) + Fibonacci(index-2);
         }
     }
 }
