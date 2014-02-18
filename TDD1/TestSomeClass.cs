@@ -24,7 +24,7 @@ namespace TDD1
         //    Assert.AreEqual(1, Fibonacci(2));
         //}
 
-        private object Fibonacci(object index)
+        private int Fibonacci(int index)
         {
             return index;
         }
