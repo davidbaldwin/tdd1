@@ -26,7 +26,7 @@ namespace TDD1
 
         private int Fibonacci(int index)
         {
-            return index;
+            return index == 0 ? 0 : 1;
         }
     }
 }
